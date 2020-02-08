@@ -100,6 +100,40 @@ button:hover {
   display: block;
 }
 
+/* //Header// */
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.header-text {
+  order: 2;
+  max-width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-img {
+  order: 1;
+  width: 120%;
+}
+
+header h1 {
+  margin-bottom: 15px;
+  font-size: 40px;
+  line-height: 45px;
+}
+header p {
+  width: 100%;
+  margin-top: 0;
+}
+
+header img {
+  width: 100%;
+  padding-left: 30px;
+}
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 }
@@ -111,25 +145,34 @@ button:hover {
   }
 
   header {
-    display: flex;
+    margin-left: 120px;
   }
 
   .header-text {
-    margin-left: 100px;
+    order: 1;
+    margin: 0;
+    width: 50%;
+    text-align: left;
   }
 
-  header img {
-    width: 45%;
+  .header-img {
+    order: 2;
+    width: 50%;
+    padding: 0;
   }
 
   header h1 {
-    font-size: 60px;
-    margin-bottom: 0;
-    line-height: 75px;
+    font-size: 80px;
+    line-height: 84px;
   }
+
   header p {
     width: 90%;
-    margin-top: 0;
+    font-size: 22px;
+  }
+  .header-img img {
+    width: 120%;
+    padding: 0;
   }
 }
 
